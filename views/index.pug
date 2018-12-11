@@ -35,193 +35,136 @@ block content
                 img.cl1(src='images/clothes.svg', width='640', height='150', alt='')
       // <section>
       div
-        div
+        .container
+          .second_nav
+            // <nav>
+            // <ul class="Menu2">
+            // <li> <
+            a(href='') All
+            // </li
+            // <li>
+            a(href='') New
+            // </li>
+            // <li>
+            a(href='') Sales
+            // </li>
+            // </ul>
+            // <nav>
+            // </section>
+            // <br>
+        section#tshirts.tshirts
           .container
-            .second_nav
-              // <nav>
-              // <ul class="Menu2">
-              // <li> <
-              a(href='') All
-              // </li
-              // <li>
-              a(href='') New
-              // </li>
-              // <li>
-              a(href='') Sales
-              // </li>
-              // </ul>
-              // <nav>
-              // </section>
-              // <br>
-            //- section#hoodies.hoodies
-            .container
-              .four_tshirts(style='display: flex; justify-content: space-around;')
-                each item in results
-                  .tshirt
-                    a(href='')
-                      img(src='images/ts1.jpg', width='220', height='316', alt='Tshirt')
-                    h4.Tshirt1 #{item.Title}
-                    p.ts_div_text #{item.description}
-                    h3.ts_div_price $#{item.price}
-                //- .tshirt
-                //-   a(href='')
-                //-     img(src='images/ts1.jpg', width='220', height='316', alt='Tshirt')
-                //-   h4.Tshirt1 Tshirt1
-                //-   p.ts_div_text Long description of a beautiful tshirt1
-                //-   h3.ts_div_price $price
-                //- .tshirt
-                //-   a(href='')
-                //-     img(src='images/ts2.jpg', width='220', height='316', alt='Tshirt')
-                //-   h4.Tshirt2 Tshirt2
-                //-   p.ts_div_text Long description of a beautiful tshirt2
-                //-   h3.ts_div_price $price
-                //- .tshirt
-                //-   a(href='')
-                //-     img(src='images/ts3.jpg', width='220', height='316', alt='Tshirt')
-                //-   h4.Tshirt3 Tshirt3
-                //-   p.ts_div_text Long description of a beautiful tshirt3
-                //-   h3.ts_div_price $price
-                //- .tshirt
-                //-   a(href='')
-                //-     img(src='images/ts4.jpg', width='220', height='316', alt='Tshirt')
-                //-   h4.Tshirt4 Tshirt4
-                //-   p.ts_div_text Long description of a beautiful tshirt4
-                //-   h3.ts_div_price $price
-              // <br>
-              section#hoodies.hoodies
-                .container
-                  .four_hoodiess(style='display: inline-flex;')
-                    .hoodie
-                      a(href='')
-                        img(src='images/hd1.jpg', width='220', height='316', alt='Tshirt')
-                      h4.Hoodie1 Hoodie1
-                      p.hd_div_text Long description of a beautiful hoodie1
-                      h3.hd_div_price $price
-                    .hoodie
-                      a(href='')
-                        img(src='images/hd2.jpg', width='220', height='316', alt='Tshirt')
-                      h4.Hoodie2 Hoodie2
-                      p.hd_div_text Long description of a beautiful hoodie2
-                      h3.hd_div_price $price
-                    .hoodie
-                      a(href='')
-                        img(src='images/hd3.jpg', width='220', height='316', alt='Tshirt')
-                      h4.Hoodie3 Hoodie3
-                      p.hd_div_text Long description of a beautiful hoodie3
-                      h3.hd_div_price $price
-                    .hoodie
-                      a(href='')
-                        img(src='images/hd4.jpg', width='220', height='316', alt='Tshirt')
-                      h4.Hoodie4 Hoodie4
-                      p.hd_div_text Long description of a beautiful hoodie4
-                      h3.hd_div_price $price
-                  // <br>
-              section#sweatshirts.sweatshirts
-                .container
-                  .four_sweatshirts(style='display: inline-flex;')
-                    .sweatshirt
-                      a(href='')
-                        img(src='images/sw1.jpg', width='220', height='316', alt='Sweatshirt')
-                      h4.Sweatshirt1 Свитшот “DOMINATION”
-                      p.sw_div_text Long description of a beautiful sweatshirt1
-                      h3.sw_div_price $price
-                    .sweatshirt
-                      a(href='')
-                        img(src='images/sw2.jpg', width='220', height='316', alt='Sweatshirt')
-                      h4.Sweatshirt2 Свитшот “REQUIEM”
-                      p.sw_div_text Long description of a beautiful sweatshirt2
-                      h3.sw_div_price $price
-                    .sweatshirt
-                      a(href='')
-                        img(src='images/sw3.jpg', width='220', height='316', alt='Sweatshirt')
-                      h4.Sweatshirt3 Свитшот “SKULLS”
-                      p.sw_div_text Long description of a beautiful sweatshirt3
-                      h3.sw_div_price $price
-                    .sweatshirt
-                      a(href='')
-                        img(src='images/sw4.jpg', width='220', height='316', alt='Sweatshirt')
-                      h4.Sweatshirt4 Свитшот “THE WORLD IS SUCKS”
-                      p.sw_div_text Long description of a beautiful sweatshirt4
-                      h3.sw_div_price $price
-                  // <hr>
+            .four_tshirts(style='display: flex; justify-content: space-around;')
+              each item in results
+                .tshirt
+                  a(href='')
+                    img(src='images/ts1.jpg', width='220', height='316', alt='Tshirt')
+                  h4.Tshirt1 #{item.Title}
+                  p.ts_div_text #{item.description}
+                  h3.ts_div_price $#{item.price}
+        section#hoodies.hoodies
+          .container
+            .four_hoodies(style='display: flex; justify-content: space-around;')
+              each item in results
+                .hoodie
+                  a(href='')
+                    img(src='images/hd1.jpg', width='220', height='316', alt='Hoodie')
+                  h4.Tshirt1 #{item.Title}
+                  p.ts_div_text #{item.description}
+                  h3.ts_div_price $#{item.price}          
+        section#sweatshirts.sweatshirts
+          .container
+            .four_sweatshirts(style='display: flex; justify-content: space-around;')
+              each item in results
+                .sweatshirt
+                  a(href='')
+                    img(src='images/sw1.jpg', width='220', height='316', alt='Sweatshirt')
+                  h4.Sweatshirt1 #{item.Title}
+                  p.sw_div_text #{item.description}
+                  h3.sw_div_price $#{item.price}
+
+
+
+
+                    // <hr>
                   // SECTION3
-                  #about_us.Section3
-                    .container
-                      a(href='')
-                        img(src='images/AboutUs.jpg', width='960', height='715', alt='')
-                      h2 About us
-                      p
-                        | Frisson - бренд уличной одежды родом из Киева, который берет своё начало в 2015 году. Создан парой молодых людей, чьи взгляды на уличную моду и желание создать то, чего еще не было на рынке украинского стритвира  совпали  на все 100%. Эти факторы  мотивировали  на создание первой коллекции.Нас не воодушевляют  банальные образы и скучные  идеи.  Музыка, артхаусные  фильмы, татуировки, уличная мода  и культура, тусовки,  ночная жизнь города, протесты, молодость и дерзость  – все это переплетается и отражается в нашей одежде. Она  «не для всех»  и это её главная фишка. В каждую созданную вещь мы вкладываем  огромный  труд, смысл и посыл –  быть вне рамок серого общества.Нашим главным преимуществом является продуманный, оригинальный дизайн и высокое качество производства одежды. При подборе материалов мы всегда руководствуемся человеческим фактором и выбираем то ,что хотелось бы носить самим. Придерживаясь новых тенденций , при этом сохраняя собственный узнаваемый стиль.
-                      // <hr>
-                      // Section4
-                      #contacts.Section4
-                        .container.wrapper
-                          h2 Feedback
-                          p We will be happy to recieve your feedback or suggestions
-                          form
-                            // <fieldset>
-                            label Your name
-                            input(type='text')
-                            label Your mail
-                            input(type='email')
-                            label Feedback
-                            input(type='text')
-                            p
-                              input(type='submit', value='Send it')
-                            // </fieldset>
-                          .form2
-                            form(action='action.php', name='register', hidden='')
-                              fieldset.auth
-                                legend Регистрация
-                                input(type='text', required='', placeholder='Имя')
-                                input#sur_name(type='text', placeholder='Фамилия')
-                                input(type='email', required='', placeholder='E-mail')
-                                input(type='password', required='', placeholder='Пароль')
-                                input#re_pass(type='password', required='', placeholder='Повторить пароль')
-                                input(type='submit', value='Отправить')
-                          .form3
-                            form(action='action.php', name='sign in', hidden='')
-                              fieldset
-                                legend Вход
-                                input(type='email', required='', placeholder='E-mail')
-                                input(type='password', required='', placeholder='Пароль')
-                                input(type='button', value='Войти')
+        #about_us.Section3
+          .container
+            a(href='')
+              img(src='images/AboutUs.jpg', width='960', height='715', alt='')
+            h2 About us
+            p
+              | Frisson - бренд уличной одежды родом из Киева, который берет своё начало в 2015 году. Создан парой молодых людей, чьи взгляды на уличную моду и желание создать то, чего еще не было на рынке украинского стритвира  совпали  на все 100%. Эти факторы  мотивировали  на создание первой коллекции.Нас не воодушевляют  банальные образы и скучные  идеи.  Музыка, артхаусные  фильмы, татуировки, уличная мода  и культура, тусовки,  ночная жизнь города, протесты, молодость и дерзость  – все это переплетается и отражается в нашей одежде. Она  «не для всех»  и это её главная фишка. В каждую созданную вещь мы вкладываем  огромный  труд, смысл и посыл –  быть вне рамок серого общества.Нашим главным преимуществом является продуманный, оригинальный дизайн и высокое качество производства одежды. При подборе материалов мы всегда руководствуемся человеческим фактором и выбираем то ,что хотелось бы носить самим. Придерживаясь новых тенденций , при этом сохраняя собственный узнаваемый стиль.
+            // <hr>
+            // Section4
+        section#contacts.Section4
+          .container.wrapper
+            h2 Feedback
+            p We will be happy to recieve your feedback or suggestions
+            form
+              // <fieldset>
+              label Your name
+              input(type='text')
+              label Your mail
+              input(type='email')
+              label Feedback
+              input(type='text')
+              p
+                input(type='submit', value='Send it')
+              // </fieldset>
+            .form2
+              form(action='action.php', name='register', hidden='')
+                fieldset.auth
+                  legend Регистрация
+                  input(type='text', required='', placeholder='Имя')
+                  input#sur_name(type='text', placeholder='Фамилия')
+                  input(type='email', required='', placeholder='E-mail')
+                  input(type='password', required='', placeholder='Пароль')
+                  input#re_pass(type='password', required='', placeholder='Повторить пароль')
+                  input(type='submit', value='Отправить')
+            .form3
+              form(action='action.php', name='sign in', hidden='')
+                fieldset
+                  legend Вход
+                  input(type='email', required='', placeholder='E-mail')
+                  input(type='password', required='', placeholder='Пароль')
+                  input(type='button', value='Войти')
                           // <hr>
-                      section#Footer.footer
-                        .container.wrapper
-                          footer
-                            .footer_div
-                              .footer_lists
-                                .Nepridumal
-                                  // <h3>Some info</h3>
-                                  ul
-                                    h3 Some info
-                                    li
-                                      a Адрес магазина:
-                                    li
-                                      a г.Киев, просп.Победы 35
-                                    li
-                                      a 12:00 – 21:00
-                                    li
-                                      a Без выходных
-                                    li
-                                      a 12:00 – 21:00
-                                    li
-                                      a Телефон
-                                    li
-                                      a +380661231827
-                                .Ssilki
-                                  h3 Social Networks
-                                  a.Instagram(href='https://www.instagram.com/snezhko13/', target='_blank')
-                                    i.fab.fa-instagram
-                                  a.VK(href='https://www.instagram.com/snezhko13/', target='_blank')
-                                    i.fab.fa-vk
-                                  a.FB(href='https://www.instagram.com/snezhko13/', target='_blank')
-                                    i.fab.fa-facebook-f
-                            p
-                              | © Copyright @September 
-                              time 2018
-                              | , All rights reserved.
+        section#Footer.footer
+          .container.wrapper
+            footer
+              .footer_div
+                .footer_lists
+                  .Nepridumal
+                    // <h3>Some info</h3>
+                    ul
+                      h3 Some info
+                      li
+                        a Адрес магазина:
+                      li
+                        a г.Киев, просп.Победы 35
+                      li
+                        a 12:00 – 21:00
+                      li
+                        a Без выходных
+                      li
+                        a 12:00 – 21:00
+                      li
+                        a Телефон
+                      li
+                        a +380661231827
+                  .Ssilki
+                    h3 Social Networks
+                    a.Instagram(href='https://www.instagram.com/snezhko13/', target='_blank')
+                      i.fab.fa-instagram
+                    a.VK(href='https://www.instagram.com/snezhko13/', target='_blank')
+                      i.fab.fa-vk
+                    a.FB(href='https://www.instagram.com/snezhko13/', target='_blank')
+                      i.fab.fa-facebook-f
+              p
+                | © Copyright @September 
+                time 2018
+                | , All rights reserved.
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     script.
       $(document).ready(function(){

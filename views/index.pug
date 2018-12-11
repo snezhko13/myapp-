@@ -75,7 +75,7 @@ block content
         section#sweatshirts.sweatshirts
           .container
             .four_sweatshirts(style='display: flex; justify-content: space-around;')
-              each item in results[0]
+              each item in results[2]
                 .sweatshirt
                   a(href='')
                     img(src='images/sw1.jpg', width='220', height='316', alt='Sweatshirt')
@@ -110,7 +110,7 @@ block content
               label Feedback
               input(type='text')
               p
-                input(type='submit', value='Send it')
+                input(href='mailto:snezhkoandrew1999@gmail.com', type='submit', value='Send it')
               // </fieldset>
             .form2
               form(action='action.php', name='register', hidden='')

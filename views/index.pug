@@ -55,7 +55,7 @@ block content
         section#tshirts.tshirts
           .container
             .four_tshirts(style='display: flex; justify-content: space-around;')
-              each item in results
+              each item in results[0]
                 .tshirt
                   a(href='')
                     img(src='images/ts1.jpg', width='220', height='316', alt='Tshirt')
@@ -65,7 +65,7 @@ block content
         section#hoodies.hoodies
           .container
             .four_hoodies(style='display: flex; justify-content: space-around;')
-              each item in results
+              each item in results[1]
                 .hoodie
                   a(href='')
                     img(src='images/hd1.jpg', width='220', height='316', alt='Hoodie')
@@ -75,7 +75,7 @@ block content
         section#sweatshirts.sweatshirts
           .container
             .four_sweatshirts(style='display: flex; justify-content: space-around;')
-              each item in results
+              each item in results[0]
                 .sweatshirt
                   a(href='')
                     img(src='images/sw1.jpg', width='220', height='316', alt='Sweatshirt')

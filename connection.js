@@ -1,6 +1,6 @@
 var mysql	= require('mysql');
 var connection = mysql.createPool({
-	multipleStatments: true,
+	multipleStatements: true,
 	connectionLimit: 10,
 	host	 : 'zanner.org.ua',
 	port	 : '33321',

@@ -17,6 +17,7 @@ block content
                 a(href='#sweatshirts') Sweatshirts
                 a(href='#about_us') About us
                 a(href='#contacts') Contacts
+                a#register Sign UP
           // </div>
         .container
           #promo.Promo
@@ -57,18 +58,18 @@ block content
             .four_tshirts(style='display: flex; justify-content: space-around;')
               each item in results[0]
                 .tshirt
-                  a(href='')
-                    img(src='images/ts1.jpg', width='220', height='316', alt='Tshirt')
+                  a(href = 'https://www.google.com.ua', target='_blank')
+                    img(src=item.image, width='220', height='316', alt='Tshirt')
                   h4.Tshirt1 #{item.Title}
                   p.ts_div_text #{item.description}
-                  h3.ts_div_price $#{item.price}
+                  h3.ts_div_price $#{item.price}  
         section#hoodies.hoodies
           .container
             .four_hoodies(style='display: flex; justify-content: space-around;')
               each item in results[1]
                 .hoodie
                   a(href='')
-                    img(src='images/hd1.jpg', width='220', height='316', alt='Hoodie')
+                    img(src=item.image, width='220', height='316', alt='Hoodie')
                   h4.Tshirt1 #{item.Title}
                   p.ts_div_text #{item.description}
                   h3.ts_div_price $#{item.price}          
@@ -78,16 +79,25 @@ block content
               each item in results[2]
                 .sweatshirt
                   a(href='')
-                    img(src='images/sw1.jpg', width='220', height='316', alt='Sweatshirt')
+                    img(src=item.image, width='220', height='316', alt='Sweatshirt')
                   h4.Sweatshirt1 #{item.Title}
                   p.sw_div_text #{item.description}
                   h3.sw_div_price $#{item.price}
-
-
-
-
-                    // <hr>
-                  // SECTION3
+        #register_modal
+          .modal
+            .form2.container
+              form(method='post' action='/clientregister', name='register',onsumbit='Refresh()')
+                // <fieldset class="auth">
+                // <legend>Sign up</legend>
+                .inner_form
+                  span(style='font-size:20px;') Sign up!
+                  input(type='text', required='', placeholder='Full name', pattern='^[a-zA-Z\s]+$' name='name')
+                  input(type='text', required='' placeholder='Phone(+XXXXX...)',pattern='[+][0-9]{6,}' , name='phone')
+                  input(type='email', required='', placeholder='E-mail', name='email')
+                  input(type='text', required='', placeholder='Post Office',pattern='^[ 0-9]+$' name='post_office')
+                  // <input type="password" id="re_pass" required="" placeholder="Confirm password">
+                  button.submit_button(type='submit',name='Submit') Register
+                  button#close_button(type='button') Close          
         #about_us.Section3
           .container
             a(href='')
@@ -111,24 +121,6 @@ block content
               input(type='text')
               p
                 input(href='mailto:snezhkoandrew1999@gmail.com', type='submit', value='Send it')
-              // </fieldset>
-            .form2
-              form(action='action.php', name='register', hidden='')
-                fieldset.auth
-                  legend Регистрация
-                  input(type='text', required='', placeholder='Имя')
-                  input#sur_name(type='text', placeholder='Фамилия')
-                  input(type='email', required='', placeholder='E-mail')
-                  input(type='password', required='', placeholder='Пароль')
-                  input#re_pass(type='password', required='', placeholder='Повторить пароль')
-                  input(type='submit', value='Отправить')
-            .form3
-              form(action='action.php', name='sign in', hidden='')
-                fieldset
-                  legend Вход
-                  input(type='email', required='', placeholder='E-mail')
-                  input(type='password', required='', placeholder='Пароль')
-                  input(type='button', value='Войти')
         section#Footer.footer
           .container.wrapper
             footer
@@ -164,7 +156,6 @@ block content
                 | © Copyright @September 
                 time 2018
                 | , All rights reserved.
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     script.
       $(document).ready(function(){
       $("a[href*=#]").on("click", function(e){

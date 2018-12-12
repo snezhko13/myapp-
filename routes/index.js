@@ -14,5 +14,20 @@ router.get('/', function(req, res, next) {
 	});
   // res.render('index', { title: 'Express' });
 });
+router.post("/clientregister", function (req, res, next) {
+  connection.query("CALL CUSTOMER_INSERT(?,?,?,?);", 
+    [
+    name = req.param("name"),
+    phone = req.param("phone"),
+    email = req.param("email"),
+    post_office = req.param("post_office"),
+    ], function(error, results, fields) {
+    
+    if (error) {
+    return console.error(error.message);
+      }
+    console.log('Add to BD ');
 
+  })
+});
 module.exports = router;

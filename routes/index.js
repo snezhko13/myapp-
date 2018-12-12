@@ -24,9 +24,11 @@ router.post("/clientregister", function (req, res, next) {
     ], function(error, results, fields) {
     
     if (error) {
-    return console.error(error.message);
-      }
+    	 console.error(error.message);
+    	 res.send(error)
+     }
     console.log('Add to BD ');
+    res.redirect('/');
 
   })
 });

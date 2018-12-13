@@ -112,16 +112,16 @@ block content
           .container.wrapper
             h2 Feedback
             p We will be happy to recieve your feedback or suggestions
-            form
+            form(method='post' action='/feedback', name='feedback',onsumbit='Refresh()')
               // <fieldset>
               label Your name
-              input(type='text')
+              input(type='text', required='', patterm='^[a-zA-Z]+$+\s' name='name')
               label Your mail
-              input(type='email')
+              input(type='email', required='', name='mail')
               label Feedback
-              input(type='text')
+              input(type='text', required='', name='feedback')
               p
-                input(href='mailto:snezhkoandrew1999@gmail.com', type='submit', value='Send it')
+                button.submit_button(type='submit',id='Submit') Send It                
         section#Footer.footer
           .container.wrapper
             footer

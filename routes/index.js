@@ -15,9 +15,10 @@ router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
 });
 router.post("/clientregister", function (req, res, next) {
-  connection.query("CALL CUSTOMER_INSERT(?,?,?,?);", 
+  connection.query("CALL CUSTOMER_INSERT(?,?,?,?,?);", 
     [
     name = req.param("name"),
+    password = req.param("password"),
     phone = req.param("phone"),
     email = req.param("email"),
     post_office = req.param("post_office"),

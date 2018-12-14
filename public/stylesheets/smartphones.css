@@ -119,7 +119,7 @@ ul{
 }
 .tshirts{
 /* 	display: flex; */
-	justify-content: center;
+	justify-content: space-around;
  	text-align: center;
 	/*margin:auto;*/
 }
@@ -152,14 +152,14 @@ ul{
 }
 .hoodies{
 /* 	display: flex; */
-	justify-content: center;
+	justify-content: space-around;
  	text-align: center;
 	/*margin:auto;*/
 	
 }
 .sweatshirts{
 /* 	display: flex; */
-	justify-content: center;
+	justify-content: space-around;
  	text-align: center;
 	/*margin:auto;*/
 	

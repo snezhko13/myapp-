@@ -1,4 +1,4 @@
-@media screen and (max-width:481px) {
+@media screen and (max-width:480px) {
 body {
   background-color: #ffffff;
   font-family: 'B52', serif;
@@ -13,7 +13,7 @@ body {
  	height: 20%;
  }
  .top{
-/*  	display: flex; */
+	display: flex;
  	justify-content: space-between;
  }
 .Promo{
@@ -84,7 +84,7 @@ i:hover{
 .second_nav{
 	margin-left:200px ;
 	margin-right: 200px;
-/* 	display: flex; */
+	display: flex;
 	justify-content: space-around;
  	/*border: 1px solid red;*/
 	/*margin:auto;*/
@@ -118,7 +118,7 @@ ul{
 	font-family: 'Underdog' , cursive; 
 }
 .tshirts{
-/* 	display: flex; */
+	display: flex;
 	justify-content: space-around;
  	text-align: center;
 	/*margin:auto;*/
@@ -141,6 +141,12 @@ ul{
 	flex-direction: column;
 
 }
+.css-adaptive {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
 .Tshirt1{
 	text-align: center;
 }
@@ -151,14 +157,14 @@ ul{
 	text-align: center;
 }
 .hoodies{
-/* 	display: flex; */
+	display: flex;
 	justify-content: space-around;
  	text-align: center;
 	/*margin:auto;*/
 	
 }
 .sweatshirts{
-/* 	display: flex; */
+	display: flex;
 	justify-content: space-around;
  	text-align: center;
 	/*margin:auto;*/
@@ -204,12 +210,6 @@ display: block;
 	width: 100%
 	justify-content: space-around;
 }
-.Section3 a img {
-	display: flex;
-	flex-direction: column;
-	width:240px; 
-	height:180px;
-}
 #register{
 	cursor: pointer;
 }
@@ -217,8 +217,6 @@ display: block;
 #Submit{
 	cursor: pointer;
 }
-
-
 }
 
 

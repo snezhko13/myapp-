@@ -127,8 +127,14 @@ ul{
 	/*margin:auto;*/
 	
 }
+<<<<<<< HEAD
+.four_tshirts{
+	display: flex;
+	justify-content: space-around;
+=======
 .Tshirt1{
 	text-align: center;
+>>>>>>> 9b4d2938e65c709c640714078ca0754b1fa8c049
 }
 .ts_div_text{
 	text-align: center;
@@ -143,6 +149,13 @@ ul{
 	/*margin:auto;*/
 	
 }
+<<<<<<< HEAD
+.Section3 a img {
+	width:960px; 
+	height:715px;
+}
+=======
+>>>>>>> 9b4d2938e65c709c640714078ca0754b1fa8c049
 .sweatshirts{
 	display: flex;
 	justify-content: center;
